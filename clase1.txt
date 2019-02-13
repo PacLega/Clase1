@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		System.out.println("-----INICIO PROGRAMA-----");
+		Scanner sc = new Scanner(System.in);
+		int entradaA = sc.nextInt();
+		System.out.println("Entrada A ---->" + entradaA);
+		int entradaB = sc.nextInt();
+		System.out.println("Entrada B ---->" + entradaB);
+		suma(entradaA, entradaB);
+        resta(entradaA, entradaB);
+        multiplicacion(entradaA,entradaB);
+        division(entradaA,entradaB);
+        tuNombre("");
+	}
+
+	public static void suma(int a, int b) {
+
+		int resultado = a + b;
+		System.out.println("El resultado de la suma es: " + resultado);
+	}
+
+	public static void resta (int a, int b){
+		
+		int resultado = a - b;
+		System.out.println("El resultado de la resta es: " + resultado);	
+	}
+	
+	public static void multiplicacion (int a, int b){
+		int resultado = a * b;
+		System.out.println("El resultado de la multiplicacion es: " + resultado);
+	}
+	
+	public static void division (float a, float b){
+		float resultado = a / b;
+		System.out.println("El resultado de la division es: " + resultado);
+	}
+	public static void tuNombre(String nombre) {
+
+		String nombre1 = "Marco";
+		System.out.println("Mi nombre es: " + nombre1);
+	}
+
+}
